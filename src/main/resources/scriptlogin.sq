@@ -1,0 +1,5 @@
+CREATE LOGIN teste2 WITH PASSWORD = 'masterkey123456@'; 
+
+CREATE USER teste2 FOR LOGIN teste2;
+
+ALTER ROLE db_owner ADD MEMBER teste2;
